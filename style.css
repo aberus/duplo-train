@@ -96,12 +96,6 @@ button:hover {
     background-color: #f4f4f4; /* Optional: for better visibility */
 }
 
-/* #forward, #stop, #back svg {
-    height: auto; 
-    width: auto;
-    vertical-align: middle;
-} */
-
 .color-button {
     color: white;
     width: 44px;
