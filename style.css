@@ -1,0 +1,110 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    justify-content: space-between; /* Distributes space around the main elements */
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: space-around; /* Distributes the buttons evenly */
+    align-items: center;
+    height: 100%; /* 70% of the viewport height */
+}
+
+#forward, #stop, #reverse {
+    background-color: #eee;
+    font-size: 24px; /* Adjust as needed */
+    padding: 1vh 2vw; /* Padding relative to viewport size */
+    border-radius: 8px; /* Optional: rounded corners */
+    flex-grow: 1; /* Makes each button expand to fill the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Adjust the width as needed */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* transition: background-color 0.3s; */
+}
+
+.button-svg{
+    border: none !important;
+    background-color: transparent !important;
+    outline: none
+  }
+
+button:hover {
+    background-color: #ccc; /* Change color on hover */
+}
+
+#connect {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    /* Additional styling for the button */
+}
+
+#shutdown {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    /* Additional styling for the button */
+}
+
+#connect, #shutdown {
+    background-color: #ddd;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #f4f4f4; /* Optional: for better visibility */
+}
+
+
+
+.bottom-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #f4f4f4; /* Optional: for better visibility */
+}
+
+/* #forward, #stop, #back svg {
+    height: auto; 
+    width: auto;
+    vertical-align: middle;
+} */
+
+.color-button {
+    color: white;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}

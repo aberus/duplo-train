@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO® DUPLO® Train</title>
+  <script src="train.js"></script>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-buttons">
+      <button id="connect" onclick="connect()">Connect</button>
+      <button id="shutdown" onclick="shutdown()"">Shut Down</button>
+    </div>
+    <div class="main-buttons">
+      <button id="reverse" onclick="reverse()">
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+          image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 492 512.324">
+          <circle fill="#39BF46" cx="231.181" cy="231.181" r="231.181" />
+          <path fill="#44944D" d="M437.688 127.17C471.601 167.894 492 220.259 492 277.396c0 129.746-105.182 234.928-234.928 234.928-103.431 0-191.249-66.842-222.619-159.683 40.74 65.85 113.605 109.721 196.728 109.721 127.682 0 231.181-103.499 231.181-231.181 0-37.412-8.898-72.749-24.674-104.011z" />
+          <path fill="#fff" fill-rule="nonzero"
+            d="M302.226 254.964c13.306-.108 24.006-10.987 23.89-24.284-.108-13.306-10.987-24.007-24.293-23.899l-81.386.474 29.433-29.907c9.321-9.483 9.196-24.741-.287-34.071-9.482-9.331-24.74-9.205-34.071.286l-70.264 71.393c-9.24 9.393-9.205 24.436 0 33.793l68.922 70.041c9.329 9.492 24.588 9.617 34.07.286 9.483-9.33 9.608-24.588.278-34.07l-29.066-29.55 82.774-.492z" />
+        </svg>
+      </button>
+      <button id="stop" onclick="stop()">
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 492 512.324">
+            <circle fill="#F33" cx="231.181" cy="231.181" r="231.181"/>
+            <path fill="#B22424" d="M437.687 127.17C471.6 167.894 492 220.259 492 277.396c0 129.745-105.183 234.928-234.928 234.928-103.431 0-191.249-66.843-222.619-159.684 40.74 65.851 113.605 109.722 196.728 109.722 127.682 0 231.181-103.499 231.181-231.181 0-37.413-8.898-72.75-24.675-104.011z"/>
+            <path fill="#fff" fill-rule="nonzero" d="M164.988 157.846H297.36c4.357 0 7.908 3.632 7.908 7.909v130.848c0 4.277-3.621 7.908-7.908 7.908H164.988c-4.276 0-7.898-3.55-7.898-7.908V165.755c0-4.348 3.551-7.909 7.898-7.909z"/>
+        </svg>
+      <button id="forward" onclick="forward()">
+        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 492 512.324" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+            <circle fill="#39BF46" cx="231.181" cy="231.181" r="231.181"/>
+            <path fill="#44944D" d="M437.687 127.17c33.913,40.724 54.313,93.089 54.313,150.226 0,129.745 -105.183,234.928 -234.928,234.928 -103.431,0 -191.249,-66.843 -222.619,-159.684 40.74,65.851 113.605,109.722 196.728,109.722 127.682,0 231.181,-103.499 231.181,-231.181 0,-37.413 -8.898,-72.75 -24.675,-104.011z"/>
+            <path fill="white" fill-rule="nonzero" d="M162.224 254.964c-13.306,-0.108 -24.006,-10.988 -23.89,-24.285 0.108,-13.306 10.987,-24.006 24.293,-23.899l81.386 0.475 -29.433 -29.907c-9.321,-9.483 -9.196,-24.741 0.286,-34.071 9.483,-9.331 24.741,-9.205 34.071,0.286l70.265 71.392c9.24,9.394 9.204,24.437 0,33.794l-68.922 70.04c-9.33,9.492 -24.588,9.617 -34.07,0.287 -9.483,-9.33 -9.608,-24.589 -0.278,-34.071l29.065 -29.549 -82.773 -0.492z"/>     
+        </svg>
+      </button>
+    </div>
+
+    <div class="bottom-buttons">
+      <button class="color-button" onclick="color(0)" style="background-color: black;"></button>
+      <button class="color-button" onclick="color(1)" style="background-color: pink;"></button>
+      <button class="color-button" onclick="color(2)" style="background-color: purple;"></button>
+      <button class="color-button" onclick="color(3)" style="background-color: blue;"></button>
+      <button class="color-button" onclick="color(4)" style="background-color: lightblue;"></button>
+      <button class="color-button" onclick="color(5)" style="background-color: greenyellow;"></button>
+      <button class="color-button" onclick="color(6)" style="background-color: green;"></button>
+      <button class="color-button" onclick="color(7)" style="background-color: yellow;"></button>
+      <button class="color-button" onclick="color(8)" style="background-color: orange;"></button>
+      <button class="color-button" onclick="color(9)" style="background-color: red;"></button>
+      <button class="color-button" onclick="color(10)" style="background-color: white;"></button>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- <html>
+  <head>
+    
+  </head>
+  <body>
+    <button onclick="connect()">Connect</button><br>
+    <button onclick="go()">Go</button><br>
+    <button onclick="stop()">Stop</button><br>
+    <button onclick="reverse()">Reverse</button><br>
+    <button onclick="shutdown()">Shutdown</button>
+    <button onclick="color(9)">Red</button>
+  </body>
+</html> -->
